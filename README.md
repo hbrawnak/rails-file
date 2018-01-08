@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 5.1
 
-* System dependencies
+Packages Used:
+* gem 'carrierwave', '~> 1.0'
+* gem 'bootstrap-sass', '~> 3.3.7'
 
-* Configuration
+This is file upload
+by [Habibur Rahman](http://www.facebook.com/follow.hbrawnak).
 
-* Database creation
+## License
 
-* Database initialization
+All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
 
-* How to run the test suite
+## Getting started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get started with the app, clone the repo and then install the needed gems:
 
-* Deployment instructions
+```
+$ bundle install --without production
+```
 
-* ...
+Next, migrate the database:
+
+```
+$ rails db:migrate
+```
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
