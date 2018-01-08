@@ -13,7 +13,7 @@ class ResumesController < ApplicationController
     if @resume.save
       redirect_to resumes_path, notice: "The resume #{@resume.name} has been uploaded."
     else
-      render new
+      redirect_to new_resume_path
     end
 
   end
